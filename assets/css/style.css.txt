@@ -1,0 +1,102 @@
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+	color: #333;
+}
+header {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 2em 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #FF5733;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 30px;
+        }
+
+        .wrapper h3 {
+            color: #fff;
+            font-size: 50px;
+            font-family: "ubuntu";
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: "Josefin Sans", sans-serif;
+            background: linear-gradient(to right, #FF5733 20%, #fff 60%, #5bdaff 40%);
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 3.5s linear infinite;
+            display: inline-block;
+        }
+
+        .project {
+            margin-bottom: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin: 40px 0;
+        }
+
+        .profile-img {
+            display: block;
+            margin: 0 auto;
+            max-width: 200px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #FF5733;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #FF8C66;
+        }
+
+        .wrapper {
+            text-align: center;
+        }
+
+        @keyframes textclip {
+            to {
+                background-position: 200% center;
+            }
+        }

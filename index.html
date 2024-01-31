@@ -13,19 +13,23 @@
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
+            color: #333;
         }
 
         header {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 1em 0;
+            padding: 2em 0;
         }
 
         section {
             max-width: 800px;
-            margin: 2em auto;
-            padding: 0 20px;
+            margin: 0 auto;
+            padding: 2em 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
@@ -34,6 +38,26 @@
 
         h2 {
             color: #333;
+            margin-top: 30px;
+        }
+
+        .wrapper h3 {
+            color: #fff;
+            font-size: 50px;
+            font-family: "ubuntu";
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: "Josefin Sans", sans-serif;
+            background: linear-gradient(to right, #FF5733 20%, #fff 60%, #5bdaff 40%);
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 3.5s linear infinite;
+            display: inline-block;
         }
 
         .project {
@@ -44,37 +68,62 @@
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 1em 0;
+            padding: 2em 0;
         }
 
         hr {
             border: none;
             height: 1px;
-            /* Set the hr color */
-            background-color: #333;
-            /* Modern Browsers */
+            background-color: #ddd;
+            margin: 40px 0;
         }
 
         .profile-img {
             display: block;
             margin: 0 auto;
-            max-width: 300px;
+            max-width: 200px;
             height: auto;
             border-radius: 50%;
             margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #FF5733;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #FF8C66;
+        }
+
+        .wrapper {
+            text-align: center;
+        }
+
+        @keyframes textclip {
+            to {
+                background-position: 200% center;
+            }
         }
     </style>
 </head>
 
 <body>
-    <header class="bg-dark text-white">
-        <h1>Patrick Olson</h1>
+    <header>
+        <div class="wrapper">
+            <h3>Patrick Olson</h3>
+        </div>
         <p>Gaming & Interactive Media, and Mobile Technology Student</p>
     </header>
 
-    <img src="assets/img/Headshot.jpg" alt="Profile Picture" class="profile-img">
-
-    <section class="container">
+    <section>
+        <img src="assets/img/Headshot.jpg" alt="Profile Picture" class="profile-img">
         <h2>About Me</h2>
         <p>
             Hey there! I'm Patrick Olson, a multi-faceted individual with a deep love for both the great outdoors and
@@ -89,7 +138,7 @@
     </section>
     <hr>
 
-    <section class="container">
+    <section>
         <h2>Projects</h2>
 
         <div class="project">
@@ -113,7 +162,7 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-white">
+    <footer>
         <p>Message me on: <a href="mailto:olsonpatrick18@gmail.com">Gmail</a></p>
         <p>Connect with me on <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a></p>
     </footer>
