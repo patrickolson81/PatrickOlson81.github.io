@@ -42,6 +42,26 @@ header {
     /* set the height of the header to 20% of the viewport height */
 }
 
+nav {
+    background-color: #797877;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  
+    /* Pay special attention here! */
+    position: fixed;
+    top: 0px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
 
 section {
     max-width: 1000px;
@@ -286,21 +306,28 @@ a:hover {
     padding: 1rem;
 }
 
-.two-column-grid {
-    display: grid;
-    grid-auto-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-}
+/* Container for skill bars */
+.container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+  }
+  
+  .skills {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+  }
+  
+  .csharp {width: 70%; background-color: #DC5756;} 
+  .unity {width: 75%; background-color: #DC5756;} 
+  .augment {width: 65%; background-color: #DC5756;}
+  .virtual {width: 60%; background-color: #DC5756;} 
+  .illustrator {width: 75%; background-color: #DC5756;} 
+  .photoshop {width: 70%; background-color: #DC5756;} 
+  .maya {width: 60%; background-color: #DC5756;} 
+  .swift {width: 40%; background-color: #DC5756;} 
 
-.two-column-grid>* {
-    padding: 1rem;
-}
 
-.row {
-    display: flex;
-}
 
-.column {
-    width: 50%;
-    padding: 1rem;
-}
+
