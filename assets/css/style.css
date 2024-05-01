@@ -1,5 +1,8 @@
 /* COLOR THEME */
 
+/*
+
+*/
 
 :root {
     --background: #393837;
@@ -8,9 +11,13 @@
     --text-primary: #AC2928;
     --text-secondary: #C73E3D;
     --text-third: #DC5756;
+    --text-fourth: #DC5756;
 
     --dark-text-primary: #C73E3D;
-    --dark-text-secondary: #DC5756;
+    --dark-text-secondary: #B8B0B3;
+
+    --flip-card-front: #EFEBED;
+    --skills-bar: #C73E3D;
 }
 
 
@@ -74,6 +81,7 @@ section.type-a {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    
 }
 
 section.type-b {
@@ -117,11 +125,28 @@ h2 {
     font-family: "Titillium Web", sans-serif;
     font-weight: 300;
 }
+.about-me h2 {
+    color: var(--text-secondary);
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+}
 
 h3 {
     color: var(--text-third);
     font-family: "Titillium Web", sans-serif;
     font-weight: 200;
+}
+.about-me h3 {
+    color: var(--text-secondary);
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+}
+
+h4 {
+    color: var(--dark-text-secondary);
+    font-family: "Titillium Web", sans-serif;
+    font-size: larger;
+    font-weight: 00;
 }
 
 .type-c h2 {
@@ -224,14 +249,21 @@ p {
     line-height: 1.6;
 }
 
-.type-c p {
-    color: var(--dark-text-primary);
+.about-me p {
+    color: var(--dark-text-secondary);
 }
 
 a {
     color: #DC5756;
     text-decoration: none;
     transition: color 0.3s ease;
+}
+
+a.button {
+    color: #DC5756;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-right: 16px;
 }
 
 a:hover {
@@ -299,7 +331,7 @@ a:hover {
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
     padding: 2em 20px;
-    background-color: #fff;
+    background-color: var(--flip-card-front);
     color: black;
 }
 
@@ -344,14 +376,14 @@ a:hover {
     
   }
 
-  .csharp {width: 70%; background-color: #DC5756;} 
-  .unity {width: 75%; background-color: #DC5756;} 
-  .augment {width: 65%; background-color: #DC5756;}
-  .virtual {width: 60%; background-color: #DC5756;} 
-  .illustrator {width: 75%; background-color: #DC5756;} 
-  .photoshop {width: 70%; background-color: #DC5756;} 
-  .maya {width: 60%; background-color: #DC5756;} 
-  .swift {width: 40%; background-color: #DC5756;} 
+  .csharp {width: 70%; background-color: var(--skills-bar);} 
+  .unity {width: 75%; background-color: var(--skills-bar);} 
+  .augment {width: 65%; background-color: var(--skills-bar);}
+  .virtual {width: 60%; background-color: var(--skills-bar);} 
+  .illustrator {width: 75%; background-color: var(--skills-bar);} 
+  .photoshop {width: 70%; background-color: var(--skills-bar);} 
+  .maya {width: 60%; background-color: var(--skills-bar);} 
+  .swift {width: 40%; background-color: var(--skills-bar);} 
 
 
 
